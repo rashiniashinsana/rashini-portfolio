@@ -42,13 +42,23 @@
 
 .social-links a {
     display: inline-block;
-    margin: 0 10px;
-    font-size: 24px;
-    color: #333;
-    transition: color 0.3s ease;
+    margin: 0 15px;
+    font-size: 30px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.git {
+    color: #2c3e50;
+}
+
+.linkedin {
+    color: #007bff;
+}
+
+.discord {
+    color: #7289da;
 }
 
 .social-links a:hover {
-    color: #007bff;
-
+    transform: scale(1.2);
 }

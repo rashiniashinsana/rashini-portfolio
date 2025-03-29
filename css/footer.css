@@ -44,7 +44,7 @@
 }
 
 .footer ul li a {
-    color: white;
+    color: #181616;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease-in-out;
 }
@@ -63,5 +63,5 @@
     margin-top: 2rem; /* Adjusted spacing above the copyright text */
     text-align: center;
     font-size: 1.6rem; /* Adjusted font size for better readability */
-    color: white;
+    color: #0c0c0c;
 }
