@@ -17,23 +17,28 @@
 /* Category Navigation */
 .categories-nav {
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .category-btn {
-    background-color: #231e73; /* Primary Blue */
+    background: linear-gradient(135deg, #231e73, #3729b9);
     color: white;
     border: none;
-    padding: 12px 24px;
+    padding: 12px 28px;
     font-size: 1.2rem;
     cursor: pointer;
-    margin: 0 15px;
     border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .category-btn:hover {
-    background-color: #3729b9; /* Darker blue on hover */
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #3729b9, #231e73);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Category Title Styling */
@@ -60,7 +65,6 @@
     width: 100%;
     max-width: 350px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #ffffff; /* White background */
     border: 1px solid #ecf0f1; /* Light gray border for definition */
 }
 
