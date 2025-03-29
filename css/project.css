@@ -1,0 +1,105 @@
+/* General Section Styling */
+.projects {
+    background-color: #f4f7fc;
+    text-align: center;
+    min-height: 100vh;
+    padding: 100px 15px;
+    background: var(--second-bg-color, #f4f7fc); /* Light blue-gray background */
+}
+
+/* Heading */
+.projects .heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #2c3e50; /* Darker text for better contrast */
+}
+
+/* Category Navigation */
+.categories-nav {
+    margin-bottom: 2rem;
+}
+
+.category-btn {
+    background-color: #231e73; /* Primary Blue */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 0 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.category-btn:hover {
+    background-color: #3729b9; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Category Title Styling */
+.category-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #34495e; /* Lighter dark gray for category titles */
+}
+
+/* Container for Projects */
+.projects-container {
+    display: inline-flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+/* Project Box Styling */
+.project-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ecf0f1; /* Light gray border for definition */
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.project-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #ecf0f1; /* Subtle divider between image and content */
+}
+
+/* Title and Category */
+.project-box h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #2c3e50; /* Darker text for project titles */
+}
+
+.project-box .category {
+    font-size: 1rem;
+    color: #7f8c8d; /* Lighter gray for category text */
+}
+
+/* Project Link Styling */
+.project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #3c3779; /* Primary Blue for links */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-link:hover {
+    color: #3329b9; /* Darker blue on hover */
+    transform: scale(1.05);
+}
