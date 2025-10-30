@@ -107,3 +107,40 @@
     color: #3329b9; /* Darker blue on hover */
     transform: scale(1.05);
 }
+/* Mobile Responsiveness */
+@media screen and (max-width: 992px) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 projects per row */
+        gap: 1.5rem;
+        justify-items: center;
+    }
+
+    .project-box {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* 1 project per row on very small screens */
+        gap: 1rem;
+    }
+
+    .category-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+    }
+
+    .project-box h4 {
+        font-size: 1.2rem;
+    }
+
+    .project-link {
+        font-size: 1rem;
+    }
+}

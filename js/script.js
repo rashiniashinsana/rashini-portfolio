@@ -29,14 +29,13 @@ window.addEventListener("scroll", function () {
  * navbar toggle
  */
 
-const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
-const navbar = document.querySelector("[data-navbar]");
+const navToggleBtn = document.querySelector('[data-nav-toggle-btn]');
+const navbar = document.querySelector('.navbar');
 
-navToggleBtn.addEventListener("click", function () {
-  elemToggleFunc(navToggleBtn);
-  elemToggleFunc(navbar);
-  elemToggleFunc(document.body);
+navToggleBtn.addEventListener('click', () => {
+  navbar.classList.toggle('active');
 });
+
 
 /** Title change */
 document.addEventListener("DOMContentLoaded", function () {
@@ -213,3 +212,6 @@ document.addEventListener("mousemove", (e) => {
     trail.remove();
   }, 500);
 });
+
+
+

@@ -102,3 +102,214 @@
         align-items: center;
     }
 }
+/*-----------------------------------*\
+ * TECHNOLOGIES SECTION
+\*-----------------------------------*/
+
+.tech {
+    min-height: 100vh;
+    padding: 6rem 2rem;
+    background-color: var(--second-bg-color);
+    text-align: center;
+}
+
+.section__title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.section__subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 5rem;
+}
+
+.technologies__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Space between content blocks */
+    padding: 2rem;
+    background-color: rgba(234, 243, 253, 0.71);
+    min-height: 75vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.technologies__content {
+    padding: 1rem;
+}
+
+.technologies__title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.technologies__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.technologies__data {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.technologies__data:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.technologies__data i {
+    font-size: 3rem;
+    transition: transform 0.3s ease;
+    color: #555;
+}
+
+.technologies__data:hover i {
+    transform: rotate(10deg);
+}
+
+.technologies__name {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 8px;
+    color: #333;
+}
+
+/*-----------------------------------*\
+ * MOBILE RESPONSIVE
+\*-----------------------------------*/
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+    .technologies__container {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .technologies__title {
+        font-size: 2rem;
+    }
+
+    .technologies__data {
+        width: 100px;
+        height: 100px;
+        padding: 12px;
+    }
+
+    .technologies__data i {
+        font-size: 2.5rem;
+    }
+
+    .technologies__name {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small tablets / large phones */
+@media screen and (max-width: 768px) {
+    .technologies__container {
+        gap: 1rem;
+    }
+
+    .technologies__box {
+        gap: 1rem;
+    }
+
+    .technologies__data {
+        width: 90px;
+        height: 90px;
+        padding: 10px;
+    }
+
+    .technologies__data i {
+        font-size: 2rem;
+    }
+
+    .technologies__name {
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 576px) {
+    .technologies__container {
+        padding: 1rem;
+    }
+
+    .technologies__box {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .technologies__data {
+        width: 80px;
+        height: 80px;
+        padding: 8px;
+    }
+
+    .technologies__data i {
+        font-size: 1.8rem;
+    }
+
+    .technologies__name {
+        font-size: 0.8rem;
+    }
+
+    .technologies__title {
+        font-size: 1.6rem;
+    }
+}
+/* Mobile phones: 2 columns per row */
+@media screen and (max-width: 576px) {
+    .technologies__container {
+        padding: 1rem;
+    }
+
+    .technologies__box {
+        display: grid; /* switch from flex to grid */
+        grid-template-columns: repeat(3, 1fr); /* 2 cards per row */
+        gap: 15px;
+        justify-items: center; /* center cards in each column */
+    }
+
+    .technologies__data {
+        width: 90px;
+        height: 90px;
+        padding: 8px;
+    }
+
+    .technologies__data i {
+        font-size: 1.8rem;
+    }
+
+    .technologies__name {
+        font-size: 0.8rem;
+    }
+
+    .technologies__title {
+        font-size: 1.6rem;
+    }
+}
+

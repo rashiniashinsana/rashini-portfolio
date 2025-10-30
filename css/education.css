@@ -102,3 +102,71 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+/*-----------------------------------*\
+ * TIMELINE RESPONSIVE
+\*-----------------------------------*/
+
+/* Tablet: ≤992px */
+@media (max-width: 992px) {
+    .timeline-items::before {
+        left: 20px; /* Move vertical line to left side */
+        transform: none;
+        width: 4px;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 50px !important;
+        padding-right: 20px !important;
+        text-align: left !important;
+        width: 100%;
+    }
+
+    .timeline-dot {
+        left: 20px !important; /* Dot aligned with line */
+        transform: none !important;
+    }
+}
+
+/* Mobile: ≤768px */
+@media (max-width: 768px) {
+    .timeline-section {
+        padding: 60px 10px;
+    }
+
+    .timeline-section h2 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .timeline-item {
+        padding-left: 40px !important;
+        padding-right: 10px !important;
+    }
+
+    .timeline-items::before {
+        left: 15px;
+        width: 3px;
+    }
+
+    .timeline-dot {
+        left: 10px !important;
+        transform: none !important;
+        width: 14px;
+        height: 14px;
+    }
+
+    .timeline-content {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .timeline-content h3 {
+        font-size: 15px;
+    }
+
+    .timeline-content p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
